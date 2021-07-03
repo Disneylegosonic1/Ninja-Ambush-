@@ -27,7 +27,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(displayWidth,300);
+  createCanvas(windowWidth,300);
   gameState = 0;
   ninja = createSprite(200, 300, 50, 50);
   ninja.addAnimation("standing",ninjaStand);
@@ -39,13 +39,13 @@ function setup() {
   poisonGroup = new Group();
   spikeGroup = new Group();
 
-  boss = createSprite(displayWidth-80, 150);
+  boss = createSprite(windowWidth-80, 150);
   boss.visible = false;
   boss.addImage("snake", snakeimg);
   boss.scale = 0.2;
 
  
-  ground = createSprite(displayWidth/2, 305, width, 5);
+  ground = createSprite(windowWidth/2, 305, width, 5);
 
   
 
